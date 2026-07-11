@@ -9,13 +9,12 @@ disable-model-invocation: true
 ## Core Rules
 
 - Keep interfaces tiny. Prefer consumer-owned interfaces. Big interface = weak abstraction
-- Make zero value useful when designing structs/APIs
+- Make zero value useful when designing structs/APIs. Like returning empty slice instead of nil.
 - Avoid `interface{}` / `any` unless boundary is truly untyped. Prefer concrete types, small interfaces, or generics
 - Copy tiny stable helper instead of adding dependency. Do not add deps for trivial glue. Add dependency only when it pays for itself
-- Avoid `unsafe`. If required, isolate and document invariant
-- Clear beats clever. Prefer boring code another Go dev can debug fast. Do not extract one-line pass-through helpers; extract only for domain naming, meaningful duplication, boundary isolation, or simpler control flow
+- Clear beats clever. Prefer boring code another Go dev can debug fast. 
+- Do not create one-line helpers that only return a value, call another function, or perform another basic operation. Inline such operations which avoid adding extra congnitive load.
 - Avoid reflection except for framework/library/boundary code where typed code is worse
-- Treat errors as values. Return, wrap, compare, or join them deliberately
 - Do not merely check errors. Add useful context, logs, handle fallback, or keep caller able to decide
 - Design architecture first, then name components so code explains shape. Docs fill details
 - Write docs for package/API users, not to narrate obvious implementation
