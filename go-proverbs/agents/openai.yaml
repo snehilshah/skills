@@ -1,0 +1,6 @@
+interface:
+  display_name: "Go Proverbs"
+  short_description: "Go proverb code editing rules"
+
+policy:
+  allow_implicit_invocation: false
