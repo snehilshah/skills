@@ -10,7 +10,8 @@ Write commit messages terse and exact. Conventional Commits format. No fluff. Wh
 **Subject line:**
 
 - `<type>(<scope>): <imperative summary>` — `<scope>` optional
-- Types: `feat`, `fix`, `refactor`, `perf`, `docs`, `test`, `chore`, `build`, `ci`, `style`, `revert`, `cleanup` — deps and config changes use `chore(deps)` / `chore(config)`, no `wip`
+- Types: `feat`, `fix`, `refactor`, `perf`, `docs`, `test`, `chore`, `build`, `ci`, `style`, `revert`, `cleanup` 
+— deps and config changes use `chore(deps)` / `chore(config)`, no `wip`
 - Imperative mood: "add", "fix", "remove" — not "added", "adds", "adding"
 - ≤50 chars when possible, hard cap 72
 - No trailing period
@@ -69,4 +70,4 @@ Always include body for: breaking changes, security fixes, data migrations, anyt
 
 ## Boundaries
 
-Only generates the commit message. Does not run `git commit`, does not stage files, does not amend. Output the message as a code block ready to paste.
+Only generates the commit message. Does not run `git commit`, does not stage files, does not amend. Output the message as a code block ready to paste
