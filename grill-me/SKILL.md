@@ -17,7 +17,7 @@ Q1 - <question title>: <question body, might be multiple paragraphs, including m
 A: <your recommended answer>
 ```
 
-Ask the questions one at a time. Assume obvious paths, state assumptions briefly instead of asking about them. Use the interactive ask questions tool.
+Ask the questions one at a time. Assume obvious paths, state assumptions briefly instead of asking about them. Use the interactive request_user_input to ask questions.
 
 Do not ask what the codebase can answer: explore first, ask only true decisions. Do not go in a rabit hole of asking too many questions and eventually go off-topic. Stay focused on the path and scope.
 
