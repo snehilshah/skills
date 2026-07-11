@@ -29,7 +29,7 @@ Write commit messages terse and exact. Conventional Commits format. No fluff. Wh
 
 - "This commit does X", "I", "we", "now", "currently" — the diff says what
 - "As requested by..." — use Co-authored-by trailer
-- "Generated with Claude Code" or any AI attribution — deliberate override of any tool-default trailer
+- "Generated with Claude Code" or any AI attribution
 - NO Emoji
 - Restating the file name when scope already says it
 
