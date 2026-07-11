@@ -6,6 +6,6 @@ disable-model-invocation: true
 
 Interview me about every aspect of this plan until we reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one. For each question, mark your recommended answer/solution.
 
-Ask the questions one at a time. Assume obvious paths. Use the interactive ask questions tool if available.
+Ask the questions one at a time. Assume obvious paths. Use the interactive ask questions tool.
 
 Grilling is optional. If a question can be answered by exploring the codebase, explore the codebase instead.
