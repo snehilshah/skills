@@ -1,6 +1,6 @@
 ---
 name: design-integrity
-description: Enforce durable interface design standards for web pages, applications, components, design systems, mockups, and UI reviews. Covers original visual direction, layout architecture, typography, color, spacing, responsive behavior, interaction feedback, accessibility, motion, content discipline, and production QA. Invoke explicitly when design quality must remain binding through implementation or critique.
+description: Binding UI design and QA standards. Invoke for any interface build, redesign, or review.
 disable-model-invocation: true
 ---
 
@@ -13,6 +13,7 @@ Build UI with identity, clarity, and operational truth. Treat rules below as bin
 1. Identify user, job, context, device mix, content volume, and technical constraints.
 2. Choose one clear visual concept. Name its defining idea in one sentence.
 3. Define memorable trait: typography, composition, interaction, material, or color behavior.
+4. Take one real aesthetic risk specific to the brief and justify it. Make deliberate, opinionated choices about palette, typography, and layout that could not be mistaken for anyone else's.
 5. Match implementation depth to concept. Minimal design needs exact rhythm. Expressive design needs coherent system.
 
 Do not produce generic AI styling: default dashboard shells, predictable card grids, purple-on-white gradients, random glass panels, interchangeable SaaS layouts, or fashionable fonts without product reason.

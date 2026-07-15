@@ -1,6 +1,6 @@
 ---
 name: go-proverbs
-description: Go code editing guidance based on selected Go proverbs and user style rules. 
+description: Go style rules for code generation. Invoke before writing Go code.
 disable-model-invocation: true
 ---
 
@@ -13,7 +13,7 @@ disable-model-invocation: true
 - Avoid `interface{}` / `any` unless boundary is truly untyped. Prefer concrete types, small interfaces, or generics
 - Copy tiny stable helper instead of adding dependency. Do not add deps for trivial glue. Add dependency only when it pays for itself
 - Clear beats clever. Prefer boring code another Go dev can debug fast. 
-- Do not create one-line helpers that only return a value, call another function, or perform another basic operation. Inline such operations which avoid adding extra congnitive load.
+- Do not create one-line helpers that only return a value, call another function, or perform another basic operation. Inline such operations which avoid adding extra cognitive load.
 - Avoid reflection except for framework/library/boundary code where typed code is worse
 - Do not merely check errors. Add useful context, logs, handle fallback, or keep caller able to decide
 - Design architecture first, then name components so code explains shape. Docs fill details
@@ -43,4 +43,4 @@ return strings.TrimSpace(name)
 2. Preserve behavior and public contracts while generating changes
 3. Generate changes only in files already being edited, reviewed, or explicitly requested in current context
 4. Apply only relevant proverbs during code generation. Do not do repo-wide cleanup
-5. Run `gofmt` after writing
+5. Run `gofmt -w` on changed files after writing
