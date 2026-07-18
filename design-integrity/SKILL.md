@@ -1,22 +1,22 @@
 ---
 name: design-integrity
 description: Binding UI design and QA standards. Invoke for any interface build, redesign, or review.
-disable-model-invocation: true
+disable-model-invocation: false
 ---
 
 # Design Integrity
 
 Build UI with identity, clarity, and operational truth. Treat rules below as binding for whole task. Do not relax them during iteration.
+ACTIVE EVERY RESPONSE. No revert after many turns. No filler drift. Still active if unsure.
 
 ## Establish Direction
 
 1. Identify user, job, context, device mix, content volume, and technical constraints.
-2. Choose one clear visual concept. Name its defining idea in one sentence.
-3. Define memorable trait: typography, composition, interaction, material, or color behavior.
-4. Take one real aesthetic risk specific to the brief and justify it. Make deliberate, opinionated choices about palette, typography, and layout that could not be mistaken for anyone else's.
-5. Match implementation depth to concept. Minimal design needs exact rhythm. Expressive design needs coherent system.
+2. Define memorable traits: typography, composition, interactions, material, or color behavior.
+3. Match implementation depth to concept. Minimal design needs exact rhythm. Expressive design needs coherent system.
 
 Do not produce generic AI styling: default dashboard shells, predictable card grids, purple-on-white gradients, random glass panels, interchangeable SaaS layouts, or fashionable fonts without product reason.
+You are much more capable of making unique and great UI/UX. Feel free to take risks.
 
 ## Respect Reset Requests
 
@@ -29,8 +29,8 @@ When user requests new direction or design system from scratch:
 ## Make Every Element Earn Space
 
 - Keep component only when it improves comprehension, hierarchy, grouping, scanning, navigation, or action clarity.
-- Remove filler columns, decorative rails, ornamental labels, floating badges, empty panels, and fake metrics.
-- Do not add copy to make layout feel populated.
+- Remove unnecessary filler columns, decorative rails, ornamental labels, floating badges, empty panels, and fake metrics.
+- Do not add just add elements to make layout feel populated.
 - Do not place ambient date, time, location, or status text without product need.
 - Use only enough cards and text to orient user and support task.
 - Prefer one coherent surface, ledger, stream, roster, canvas, timeline, or master-detail layout when card grid adds clutter.
@@ -50,10 +50,8 @@ When user requests new direction or design system from scratch:
 
 ## Keep Content Honest
 
-- Write only useful interface copy.
 - Place labels where they orient, explain state, or support action.
 - Remove decorative editorial language detached from user task.
-- Show real data and real actions. Wire controls or mark mock behavior clearly.
 - Never leave convincing fake controls, false persistence, fabricated activity, or meaningless statistics.
 - Use contextual icon or no icon. Never use sparkle glyphs, sparkle emoji, or sparkle-themed icons.
 
@@ -89,30 +87,3 @@ Use motion to explain relationship, continuity, state change, or hierarchy. Avoi
 - Preserve keyboard operation and focus after dialogs or navigation.
 - Do not encode meaning through color alone.
 - Meet contrast and touch-target requirements.
-
-## Implementation Workflow
-
-1. Inspect current product constraints and real content.
-2. State concept, memorable trait, and justified risk.
-3. Sketch information architecture before styling components.
-4. Define tokens: color, type, spacing, radius, border, shadow, motion.
-5. Build layout primitives and interaction states.
-6. Implement screens with real content density.
-7. Verify phone, tablet, and desktop in browser.
-8. Test hover, focus, dialog opacity, close feedback, overflow, and console errors.
-9. Group small feedback edits. Run build or lint once per meaningful batch unless risk demands earlier check.
-
-## Final Gate
-
-Reject result when any answer is no:
-
-- Does design have concept specific to product purpose?
-- Is architecture meaningfully distinct when new direction was requested?
-- Does every element and gap serve user task?
-- Is all text readable and aligned?
-- Are contrast and overlay surfaces reliable?
-- Do all actions provide feedback?
-- Are mobile and tablet compositions intentional?
-- Is content truthful and uncluttered?
-- Would user understand what is clickable without guessing?
-- Did browser QA validate real rendered layout?
