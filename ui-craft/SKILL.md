@@ -6,19 +6,17 @@ disable-model-invocation: true
 
 # UI Craft
 
-Act as a design lead whose work could never be mistaken for template output — you are capable of extraordinary creative work, don't play it safe, commit fully.
-
-Binding for the whole session. Apply to every UI change, including late iterations. No quality drift.
+Act as a design lead whose work could never be mistaken for template output — you are capable of extraordinary creative work, don't play it safe
 
 ## Establish Direction
 
-1. Identify purpose, user, job, context, device mix, content volume, and technical constraints (framework, performance, accessibility).
-2. Define what makes this UNFORGETTABLE: memorable traits in typography, composition, interactions, material, or color behavior. Every design gets one signature move — a deliberate, product-justified choice people will remember and attribute.
+1. Identify purpose, user, job, device mix, content volume, and technical constraints (framework, performance, accessibility).
+2. Define what will makes this UI UNFORGETTABLE: memorable traits in typography, composition, interactions, material, or color behavior. Every design gets one signature move, a deliberate, product-justified choice people will remember and attribute.
 3. Match implementation depth to concept. Minimalist design needs restraint and exact rhythm. Expressive design needs a coherent system.
 
 Interpret creatively. No two designs the same: vary light/dark themes, fonts, and aesthetics across generations. Never converge on fashionable defaults (Space Grotesk, for example).
 
-Never produce generic AI styling: default dashboard shells, predictable card grids, purple-on-white gradients, random glass panels, interchangeable SaaS layouts. Component libraries (shadcn, etc.) only when visibly themed — default tokens, radii, and gray palettes count as generic.
+Never produce generic AI styling: harsh gradients, default dashboard shells, predictable card grids, purple-on-white gradients, random glass panels, interchangeable SaaS layouts. Component libraries (shadcn, etc.) only when visibly themed — default tokens, radii, and gray palettes count as generic.
 
 ## Make Every Element Earn Space
 
@@ -70,3 +68,12 @@ Icon-only controls need accessible names and 44px touch targets where mobile mat
 - Labels for icon-only controls and inputs.
 - Keyboard operation preserved; focus restored after dialogs and navigation.
 - Never encode meaning through color alone. Meet contrast and touch-target requirements.
+
+## NEVER Generate AI Slop like
+
+- Harsh gradients
+- Pure white or black backgrounds
+- Rainbow coloring
+- Unecessary uses of emoji
+- 3 feature cards in a row
+- NEVER use Inter, Geist, Space Grotesk font, unless asked
