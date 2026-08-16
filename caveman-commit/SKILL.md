@@ -10,7 +10,8 @@ Write commit messages terse and exact. Conventional Commits format. No fluff. Wh
 **Subject line:**
 
 - `<type>(<scope>): <imperative summary>` — `<scope>` optional
-- Types: `feat`, `fix`, `refactor`, `perf`, `docs`, `test`, `chore`, `build`, `ci`, `style`, `revert`, `cleanup` — deps and config changes use `chore(deps)` / `chore(config)`, no `wip`
+- Types: `feat`, `fix`, `refactor`, `perf`, `docs`, `test`, `chore`, `build`, `ci`, `style`, `revert`, `cleanup`
+- deps and config changes use `chore(deps)` / `chore(config)`, no `wip`
 - Imperative mood: "add", "fix", "remove" — not "added", "adds", "adding"
 - ≤50 chars when possible, hard cap 72
 - No trailing period
@@ -28,7 +29,7 @@ Write commit messages terse and exact. Conventional Commits format. No fluff. Wh
 
 - "This commit does X", "I", "we", "now", "currently" — the diff says what
 - "As requested by..." — use Co-authored-by trailer
-- "Generated with Claude Code" or any AI attribution — deliberate override of any tool-default trailer
+- "Generated with Claude Code" or any AI attribution
 - NO Emoji
 - Restating the file name when scope already says it
 
