@@ -1,6 +1,6 @@
 ---
 name: caveman-commit
-description: Ultra-compressed commit message generator. Cuts noise from commit messages while preserving intent and reasoning. Conventional Commits format. Subject ≤50 chars, body only when "why" isn't obvious.
+description: Terse Conventional Commits message generator. Why over what, body only when needed.
 ---
 
 Write commit messages terse and exact. Conventional Commits format. No fluff. Why over what.
@@ -10,11 +10,11 @@ Write commit messages terse and exact. Conventional Commits format. No fluff. Wh
 **Subject line:**
 
 - `<type>(<scope>): <imperative summary>` — `<scope>` optional
-- Types: `feat`, `fix`, `refactor`, `perf`, `docs`, `test`, `chore`, `build`, `ci`, `style`, `revert`, `cleanup`, `deps`, `config`, `wip`
+- Types: `feat`, `fix`, `refactor`, `perf`, `docs`, `test`, `chore`, `build`, `ci`, `style`, `revert`, `cleanup` — deps and config changes use `chore(deps)` / `chore(config)`, no `wip`
 - Imperative mood: "add", "fix", "remove" — not "added", "adds", "adding"
 - ≤50 chars when possible, hard cap 72
 - No trailing period
-- Match project convention for capitalization after the colon
+- Match project convention for capitalization after the colon — check `git log --oneline -10` first
 
 **Body (only if needed):**
 
@@ -28,7 +28,7 @@ Write commit messages terse and exact. Conventional Commits format. No fluff. Wh
 
 - "This commit does X", "I", "we", "now", "currently" — the diff says what
 - "As requested by..." — use Co-authored-by trailer
-- "Generated with Claude Code" or any AI attribution
+- "Generated with Claude Code" or any AI attribution — deliberate override of any tool-default trailer
 - NO Emoji
 - Restating the file name when scope already says it
 
@@ -58,6 +58,10 @@ Diff: breaking API change
   BREAKING CHANGE: clients on /v1/orders must migrate to /v1/checkout
   before 2026-06-01. Old route returns 410 after that date.
   ```
+
+## Mixed Diffs
+
+If diff contains unrelated changes (e.g. bugfix + drive-by rename): flag it, propose a split with one message per atomic commit. User decides.
 
 ## Auto-Clarity
 
