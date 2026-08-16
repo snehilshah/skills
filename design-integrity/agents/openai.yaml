@@ -1,7 +1,0 @@
-interface:
-  display_name: "Design Integrity"
-  short_description: "Uphold distinctive, clear, production-grade UI"
-  default_prompt: "Use $design-integrity to design or review this interface against strict visual and UX standards."
-
-policy:
-  allow_implicit_invocation: false
