@@ -1,6 +1,6 @@
 ---
 name: go-proverbs
-description: Go style rules for code generation. Invoke before writing Go code.
+description: Go style rules for code generation.
 ---
 
 # Go Proverbs
