@@ -1,6 +1,6 @@
 ---
 name: ui-craft
-description: Distinctive UI design plus binding QA standards. Invoke for any interface build, redesign, or review.
+description: Distinctive UI design plus binding QA standards.
 ---
 
 # UI Craft
