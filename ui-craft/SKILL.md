@@ -28,7 +28,7 @@ Never produce generic AI styling: harsh gradients, default dashboard shells, pre
 ## Build Visual Harmony
 
 - Establish a spacing scale. Align labels, dividers, avatars, metadata, body copy, and actions to it. Keep related items close; separate groups consistently.
-- Pair a distinctive display font with a highly legible body font when the product permits. Avoid generic defaults (Inter, Roboto, Arial, system fonts) unless brand or platform requires them.
+- Pair a distinctive display font with a highly legible body font when the product permits. Avoid generic defaults unless brand or platform requires them.
 - Limit type roles; make size, weight, line-height, and measure intentional. Never shrink secondary text until it looks neglected.
 - Commit to a cohesive palette. Define semantic tokens. Verify contrast on every surface.
 - Keep dialogs, popovers, sheets, menus, and overlays opaque unless transparency has functional reason.
@@ -75,4 +75,4 @@ Icon-only controls need accessible names and 44px touch targets where mobile mat
 - Rainbow coloring
 - Unecessary uses of emoji
 - 3 feature cards in a row
-- NEVER use Inter, Geist, Space Grotesk font, unless asked
+- NEVER use Inter, Geist, Space Grotesk font, Inter, Roboto, Arial, system fonts unless asked
