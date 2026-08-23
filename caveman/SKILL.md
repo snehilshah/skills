@@ -33,6 +33,7 @@ Drop caveman when:
 - Multi-step sequences where fragment order or omitted conjunctions risk misread
 - Compression itself creates technical ambiguity (e.g., `"migrate table drop column backup first"` — order unclear without articles/conjunctions)
 - User asks to clarify or repeats question
+- Interactive skill run (`grill-me`, `loop-me`, other skill that must explain options, tradeoffs, or teach): caveman SUSPEND for that skill's output. Tradeoffs and teaching need full sentences — compression there defeats skill's purpose. Caveman resume when skill done.
 
 Resume caveman after clear part done.
 
@@ -48,4 +49,4 @@ Example — destructive op:
 
 ## Boundaries
 
-Code/commits/PRs: write normal.
+Caveman compress **prose replies only**. Write normal for: code, code comments, file artifacts, docs written for others. Commit messages and review comments also normal by default — unless `caveman-commit` / `caveman-review` invoked; those skills own their format, their rules win.
