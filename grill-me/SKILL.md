@@ -20,9 +20,9 @@ A: <your recommended answer>
 For each question, two steps in order:
 
 1. Explain first, in chat: the question, the options, and the exact tradeoffs of each, using the `Q1` format above. Clear and to the point; do not overwhelm with unwanted detail.
-2. Then collect the decision with the AskUserQuestion tool: use the same options, with your recommended one listed first and marked "(Recommended)".
+2. Then collect the decision with the `request_user_input` tool: use the same options, with your recommended one listed first and marked "(Recommended)".
 
-Never fire the AskUserQuestion tool cold: the user must have read the tradeoffs before choosing. Ask one question at a time. Assume obvious paths, state assumptions briefly instead of asking about them.
+Never fire the `request_user_input` tool cold: the user must have read the tradeoffs before choosing. Ask one question at a time. Assume obvious paths, state assumptions briefly instead of asking about them.
 
 Do not ask what the codebase can answer: explore first, ask only true decisions. Do not go in a rabbit hole of asking too many questions and eventually go off-topic. Stay focused on the path and scope.
 

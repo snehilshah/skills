@@ -13,7 +13,7 @@ Method:
 
 1. Have the user restate their current understanding first to locate gaps.
 2. Fill gaps from there. Answer eli5, eli14, or elii (explain like an intern with no codebase knowledge) on request.
-3. Quiz with open-ended and multiple-choice questions via AskUserQuestion. Vary the position of the correct answer. Do not reveal answers until after submission.
+3. Quiz with open-ended and multiple-choice questions via `request_user_input`. Vary the position of the correct answer. Do not reveal answers until after submission.
 4. Repeat restate, fill, and quiz until the mastery bar is met.
 
 End: print a summary in chat covering the gaps found and their corrections. No file output.
