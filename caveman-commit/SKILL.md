@@ -5,13 +5,19 @@ description: Terse Conventional Commits message generator. Why over what, body o
 
 Write commit messages terse and exact. Conventional Commits format. No fluff. Why over what.
 
+## Input
+
+Read the **staged diff only** ignore unstaged and untracked changes. If nothing is staged, say so and stop — never fall back to the working tree or guess from recent files.
+
 ## Rules
 
 **Subject line:**
 
 - `<type>(<scope>): <imperative summary>` — `<scope>` optional
 - Types: `feat`, `fix`, `refactor`, `perf`, `docs`, `test`, `chore`, `build`, `ci`, `style`, `revert`, `cleanup`
-- deps and config changes use `chore(deps)` / `chore(config)`, no `wip`
+- Deps and config changes use `chore(deps)` / `chore(config)`
+- `wip` is never a type. If work is unfinished, name what actually changed with a real type — or don't commit
+- Breaking change: `!` after type/scope (`feat(api)!:`) **and** a `BREAKING CHANGE: <impact + migration path>` footer in the body.
 - Imperative mood: "add", "fix", "remove" — not "added", "adds", "adding"
 - ≤50 chars when possible, hard cap 72
 - No trailing period
