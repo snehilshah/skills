@@ -8,14 +8,14 @@ Write a handoff document summarising the current conversation so a fresh agent c
 
 ## Structure
 
-Use exactly these sections, in this order. Drop a section only if truly empty, never pad one.
+Use exactly these sections, in this order. Drop a section only if truly empty — never pad one.
 
-1. Goal — what the overall effort is trying to achieve, one or two lines.
-2. Current state — what is done and verified vs. done but unverified.
-3. Next steps — ordered, concrete, starting with the immediate next action.
-4. Blockers / open questions — anything unresolved, and who or what resolves it.
-5. Key files & artifacts — paths and URLs (specs, plans, issues, commits, diffs) with a few words on why each matters.
-6. Decisions & constraints — choices already made (with the why, if non-obvious) and every guideline the user stated this session: conventions, preferences, scope limits. The next agent must inherit these.
+1. **Goal** — what the overall effort is trying to achieve, one or two lines.
+2. **Current state** — what is done and verified vs. done but unverified.
+3. **Next steps** — ordered, concrete, starting with the immediate next action.
+4. **Blockers / open questions** — anything unresolved, and who or what resolves it.
+5. **Key files & artifacts** — paths and URLs (specs, plans, issues, commits, diffs) with a few words on why each matters.
+6. **Decisions & constraints** — choices already made (with the why, if non-obvious) and every guideline the user stated this session: conventions, preferences, scope limits. The next agent must inherit these.
 
 If the user passed arguments, treat them as what the next session will focus on and tailor the doc accordingly — especially Next steps.
 
