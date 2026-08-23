@@ -7,9 +7,13 @@ Write code review comments terse and actionable. One line per finding. Location,
 
 ## Rules
 
-Format: `L<line>: <problem>. <fix>.` — or `<file>:L<line>: ...` when reviewing multi-file diffs.
+Format: `L<line>: <prefix>: <problem>. <fix>.` — use `L<start>-<end>` for a range, and `<file>:L<line>: ...` when reviewing multi-file diffs.
 
-Severity prefix (optional, when mixed):
+Line numbers are **file-relative in the post-change version** (the numbers shown on the right side of the PR diff) — never diff-hunk offsets.
+
+Optionally open with one summary line — overall verdict in a single sentence. All praise lives there; never per-comment.
+
+Severity prefix (always, exactly one per finding):
 
 - `BUG:` — broken behavior, will cause incident
 - `RISK:` — works but fragile (race, missing null check, swallowed error)
@@ -44,7 +48,7 @@ PREFER: `L23: RISK: no retry on 429. Wrap in withBackoff(3).`
 
 ## Auto-Clarity
 
-Drop terse mode for: security findings (CVE-class bugs need full explanation + reference), architectural disagreements (need rationale, not just a one-liner), and onboarding contexts where the author is new and needs the "why". In those cases write a normal paragraph, then resume terse for the rest.
+Drop terse mode for: security findings (CVE-class bugs need full explanation + reference), architectural disagreements (need rationale, not just a one-liner), and when the user says the author is new/onboarding and needs the "why". In those cases write a normal paragraph, then resume terse for the rest.
 
 ## Boundaries
 
