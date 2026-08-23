@@ -1,6 +1,7 @@
 ---
 name: ui-craft
 description: Distinctive UI design plus binding QA standards.
+disable-model-invocation: true
 ---
 
 # UI Craft
