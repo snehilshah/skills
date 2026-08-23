@@ -17,7 +17,12 @@ Q1 - <question title>: <question body, might be multiple paragraphs, including m
 A: <your recommended answer>
 ```
 
-Ask the questions one at a time. Assume obvious paths, state assumptions briefly instead of asking about them. Use the interactive ask questions tool.
+For each question, two steps in order:
+
+1. **Explain first, in chat** — the question, the options, and the exact tradeoffs of each, using the `Q1` format above. Clear and to the point; do not overwhelm with unwanted detail.
+2. **Then collect the decision with the AskUserQuestion tool** — same options, your recommended one listed first and marked "(Recommended)".
+
+Never fire the AskUserQuestion tool cold: the user must have read the tradeoffs before choosing. Ask one question at a time. Assume obvious paths, state assumptions briefly instead of asking about them.
 
 Do not ask what the codebase can answer: explore first, ask only true decisions. Do not go in a rabbit hole of asking too many questions and eventually go off-topic. Stay focused on the path and scope.
 
