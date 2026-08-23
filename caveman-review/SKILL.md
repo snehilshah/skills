@@ -1,6 +1,7 @@
 ---
 name: caveman-review
 description: Ultra-compressed code review comments. Each comment is one line, location, problem, fix.
+disable-model-invocation: true
 ---
 
 Write code review comments terse and actionable. One line per finding. Location, problem, fix. No throat-clearing.

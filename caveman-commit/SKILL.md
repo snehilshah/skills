@@ -1,6 +1,7 @@
 ---
 name: caveman-commit
 description: Terse Conventional Commits message generator. Why over what, body only when needed.
+disable-model-invocation: true
 ---
 
 Write commit messages terse and exact. Conventional Commits format. No fluff. Why over what.

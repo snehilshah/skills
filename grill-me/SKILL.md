@@ -1,6 +1,7 @@
 ---
 name: grill-me
 description: Interview the user about a plan or design until reaching shared understanding, resolving each branch of the decision tree.
+disable-model-invocation: true
 ---
 
 Interview me about the plan or design until we reach a shared understanding. Walk through the relevant branches of the design tree one decision at a time. Resolve upstream decisions before asking about choices that depend on them.

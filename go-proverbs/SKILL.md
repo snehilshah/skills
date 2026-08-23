@@ -1,6 +1,7 @@
 ---
 name: go-proverbs
 description: Go style rules for code generation.
+disable-model-invocation: true
 ---
 
 # Go Proverbs
