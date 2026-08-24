@@ -13,7 +13,7 @@ Line numbers are file-relative in the post-change version (the numbers shown on 
 
 Optionally open with one summary line: the overall verdict in a single sentence. All praise lives there; never per-comment.
 
-Severity prefix (always, exactly one per finding, one per line):
+Severity prefix (always, exactly one per finding):
 
 - `BUG:` broken behavior, will cause incident
 - `RISK:` works but fragile (race, missing null check, swallowed error)
