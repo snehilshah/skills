@@ -7,7 +7,7 @@ Write code review comments terse and actionable. One line per finding. Location,
 
 ## Rules
 
-Format: `L<line>: <prefix>: <problem>. <fix>.`; use `L<start>-<end>` for a range and `<file>:L<line>: ...` when reviewing multi-file diffs.
+Format: `L<line>: <prefix>: <problem>. <fix>.`; use `L<start>-<end>` for a range and `<file>:L<line>: ...` when reviewing multi-file diffs. Separate each finding with a blank line so Markdown renders them on distinct lines.
 
 Line numbers are file-relative in the post-change version (the numbers shown on the right side of the PR diff), never diff-hunk offsets.
 
