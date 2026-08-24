@@ -12,15 +12,17 @@ Act as a design lead whose work could never be mistaken for template output — 
 Before anything else, classify the request:
 
 - **New surface** — greenfield build, redesign, or a page/product with no established design language: the full skill applies, including Establish Direction and the signature move.
-- **Scoped change** — bug fix, new field, one component, layout tweak, or any edit inside an existing product with an established design language: **skip Establish Direction entirely.** Inherit the product's existing fonts, tokens, palette, spacing, and components. No signature move, no new fonts, no re-theming. Apply only the QA sections (element economy, interaction states, responsive, accessibility) — and only to the surface being touched.
+- **Scoped change** — bug fix, new field, one component, layout tweak, or any edit inside an existing product with an established design language: **skip Establish Direction entirely.** Inherit the product's existing fonts, tokens, palette, spacing, and components. No signature move, no new fonts, no re-theming. Apply the remaining craft and QA standards only to the surface being touched.
 
 Never turn a scoped ticket into a project-wide restyle. Distinctiveness is for new surfaces; consistency is the standard inside existing ones.
 
 ## Establish Direction
 
 1. Identify purpose, user, job, device mix, content volume, and technical constraints (framework, performance, accessibility).
-2. Define what will makes this UI UNFORGETTABLE: memorable traits in typography, composition, interactions, material, or color behavior. Every design gets one signature move, a deliberate, product-justified choice people will remember and attribute.
+2. Define what will make this UI UNFORGETTABLE: memorable traits in typography, composition, interactions, material, or color behavior. Every design gets one signature move, a deliberate, product-justified choice people will remember and attribute.
 3. Match implementation depth to concept. Minimalist design needs restraint and exact rhythm. Expressive design needs a coherent system.
+
+Explore composition deliberately: asymmetry, overlap, diagonal flow, grid-breaking elements, generous negative space, or controlled density — only where justified by the concept and content.
 
 Interpret creatively. No two designs the same: vary light/dark themes, fonts, and aesthetics across generations. Never converge on fashionable defaults (Space Grotesk, for example).
 
@@ -39,7 +41,7 @@ Never produce generic AI styling — the canonical slop list at the end of this 
 - Establish a spacing scale. Align labels, dividers, avatars, metadata, body copy, and actions to it. Keep related items close; separate groups consistently.
 - Pair a distinctive display font with a highly legible body font when the product permits. Avoid generic defaults unless brand or platform requires them.
 - Limit type roles; make size, weight, line-height, and measure intentional. Never shrink secondary text until it looks neglected.
-- Commit to a cohesive palette. Define semantic tokens. Verify contrast on every surface.
+- Commit to a cohesive palette. Define semantic tokens using the project's native token system — CSS custom properties on the web — and avoid scattered literal values. Verify contrast on every surface.
 - Keep dialogs, popovers, sheets, menus, and overlays opaque unless transparency has functional reason.
 - Hard shadows, heavy black fills, and poster-like treatment only when the concept genuinely supports them — no neo-brutalism by default.
 
@@ -61,7 +63,7 @@ Every interactive element needs visible feedback:
 - Loading: stable geometry, no layout shift.
 - Error/destructive/dismissive: semantic danger feedback; close controls signal dismissal clearly.
 
-Icon-only controls need accessible names. Touch targets meet platform minimums where touch matters: 44×44pt on iOS/web, 48×48dp on Android. Arrows inside circles must respond when actionable. Use motion to explain relationship, continuity, state change, or hierarchy — never ornament. Respect reduced-motion preferences. Prefer the project's motion library; don't add a duplicate animation stack.
+Icon-only controls need accessible names. Touch targets meet platform minimums where touch matters: 44×44 CSS px on web, 44×44 pt on iOS, and 48×48 dp on Android. Arrows inside circles must respond when actionable. Use motion to explain relationship, continuity, state change, or hierarchy — never ornament. Respect reduced-motion preferences. Prefer the project's motion library; don't add a duplicate animation stack.
 
 ## Treat Responsive Layout as Core Design
 
@@ -74,7 +76,7 @@ Icon-only controls need accessible names. Touch targets meet platform minimums w
 
 - Semantic structure, correct control elements, logical heading and DOM reading order.
 - Labels for icon-only controls and inputs.
-- Keyboard operation preserved; focus restored after dialogs and navigation.
+- Keyboard operation preserved. Restore focus to the trigger after closing a dialog; after navigation, move focus appropriately for the new view.
 - Never encode meaning through color alone. Meet WCAG contrast ratios and the platform touch-target minimums above.
 
 ## NEVER Generate AI Slop (canonical list)
