@@ -5,7 +5,16 @@ description: Distinctive UI design plus binding QA standards.
 
 # UI Craft
 
-Act as a design lead whose work could never be mistaken for template output — you are capable of extraordinary creative work, don't play it safe
+Act as a design lead whose work could never be mistaken for template output — you are capable of extraordinary creative work, don't play it safe.
+
+## Match the Scope First
+
+Before anything else, classify the request:
+
+- **New surface** — greenfield build, redesign, or a page/product with no established design language: the full skill applies, including Establish Direction and the signature move.
+- **Scoped change** — bug fix, new field, one component, layout tweak, or any edit inside an existing product with an established design language: **skip Establish Direction entirely.** Inherit the product's existing fonts, tokens, palette, spacing, and components. No signature move, no new fonts, no re-theming. Apply only the QA sections (element economy, interaction states, responsive, accessibility) — and only to the surface being touched.
+
+Never turn a scoped ticket into a project-wide restyle. Distinctiveness is for new surfaces; consistency is the standard inside existing ones.
 
 ## Establish Direction
 
@@ -15,7 +24,7 @@ Act as a design lead whose work could never be mistaken for template output — 
 
 Interpret creatively. No two designs the same: vary light/dark themes, fonts, and aesthetics across generations. Never converge on fashionable defaults (Space Grotesk, for example).
 
-Never produce generic AI styling: harsh gradients, default dashboard shells, predictable card grids, purple-on-white gradients, random glass panels, interchangeable SaaS layouts. Component libraries (shadcn, etc.) only when visibly themed — default tokens, radii, and gray palettes count as generic.
+Never produce generic AI styling — the canonical slop list at the end of this skill is binding. Component libraries (shadcn, etc.) only when visibly themed — default tokens, radii, and gray palettes count as generic.
 
 ## Make Every Element Earn Space
 
@@ -52,7 +61,7 @@ Every interactive element needs visible feedback:
 - Loading: stable geometry, no layout shift.
 - Error/destructive/dismissive: semantic danger feedback; close controls signal dismissal clearly.
 
-Icon-only controls need accessible names and 44px touch targets where mobile matters. Arrows inside circles must respond when actionable. Use motion to explain relationship, continuity, state change, or hierarchy — never ornament. Respect reduced-motion preferences. Prefer the project's motion library; don't add a duplicate animation stack.
+Icon-only controls need accessible names. Touch targets meet platform minimums where touch matters: 44×44pt on iOS/web, 48×48dp on Android. Arrows inside circles must respond when actionable. Use motion to explain relationship, continuity, state change, or hierarchy — never ornament. Respect reduced-motion preferences. Prefer the project's motion library; don't add a duplicate animation stack.
 
 ## Treat Responsive Layout as Core Design
 
@@ -66,13 +75,13 @@ Icon-only controls need accessible names and 44px touch targets where mobile mat
 - Semantic structure, correct control elements, logical heading and DOM reading order.
 - Labels for icon-only controls and inputs.
 - Keyboard operation preserved; focus restored after dialogs and navigation.
-- Never encode meaning through color alone. Meet contrast and touch-target requirements.
+- Never encode meaning through color alone. Meet WCAG contrast ratios and the platform touch-target minimums above.
 
-## NEVER Generate AI Slop like
+## NEVER Generate AI Slop (canonical list)
 
-- Harsh gradients
-- Pure white or black backgrounds
-- Rainbow coloring
-- Unecessary uses of emoji
-- 3 feature cards in a row
-- NEVER use Inter, Geist, Space Grotesk font, Inter, Roboto, Arial, system fonts unless asked
+- Harsh gradients, purple-on-white gradients, rainbow coloring
+- Pure `#fff` / `#000` backgrounds (tint them; contrast requirements above still apply)
+- Default dashboard shells, interchangeable SaaS layouts, random glass panels
+- Formulaic feature-card grids — e.g. the default three-identical-cards-in-a-row marketing block. Cards themselves are governed by the card rules in "Make Every Element Earn Space": allowed only when each item carries rich, distinct preview content
+- Unnecessary emoji; sparkle glyphs or sparkle-themed icons
+- Fonts: Inter, Geist, Space Grotesk, Roboto, Arial, or bare system font stacks — unless the brand/platform requires them, the existing product already uses them (scoped changes inherit), or the user asks
