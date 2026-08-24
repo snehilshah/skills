@@ -7,34 +7,34 @@ Write commit messages terse and exact. Conventional Commits format. No fluff. Wh
 
 ## Input
 
-Read the **staged diff only** ignore unstaged and untracked changes. If nothing is staged, say so and stop — never fall back to the working tree or guess from recent files.
+Read the staged diff only; ignore unstaged and untracked changes. If nothing is staged, say so and stop. Never fall back to the working tree or guess from recent files.
 
 ## Rules
 
-**Subject line:**
+Subject line:
 
-- `<type>(<scope>): <imperative summary>` — `<scope>` optional
+- `<type>(<scope>): <imperative summary>`; `<scope>` is optional
 - Types: `feat`, `fix`, `refactor`, `perf`, `docs`, `test`, `chore`, `build`, `ci`, `style`, `revert`, `cleanup`
 - Deps and config changes use `chore(deps)` / `chore(config)`
-- `wip` is never a type. If work is unfinished, name what actually changed with a real type — or don't commit
-- Breaking change: `!` after type/scope (`feat(api)!:`) **and** a `BREAKING CHANGE: <impact + migration path>` footer in the body.
-- Imperative mood: "add", "fix", "remove" — not "added", "adds", "adding"
+- `wip` is never a type. If work is unfinished, name what actually changed with a real type or don't commit
+- Breaking change: `!` after type/scope (`feat(api)!:`) and a `BREAKING CHANGE: <impact + migration path>` footer in the body.
+- Imperative mood: "add", "fix", "remove"; not "added", "adds", "adding"
 - ≤50 chars when possible, hard cap 72
 - No trailing period
-- Match project convention for capitalization after the colon — check `git log --oneline -10` first
+- Match project convention for capitalization after the colon; check `git log --oneline -10` first
 
-**Body (only if needed):**
+Body (only if needed):
 
 - Skip entirely when subject is self-explanatory
-- Add body only for: non-obvious _why_, breaking changes, migration notes, linked issues
+- Add body only for: non-obvious why, breaking changes, migration notes, linked issues
 - Wrap at 72 chars
 - Bullets `-` not `*`
 - Reference issues/PRs at end: `Closes #42`, `Refs #17`
 
-**What NEVER goes in:**
+Excluded content:
 
-- "This commit does X", "I", "we", "now", "currently" — the diff says what
-- "As requested by..." — use Co-authored-by trailer
+- "This commit does X", "I", "we", "now", "currently"; the diff says what
+- "As requested by..."; use a Co-authored-by trailer
 - "Generated with Claude Code" or any AI attribution
 - NO Emoji
 - Restating the file name when scope already says it
@@ -72,7 +72,7 @@ If diff contains unrelated changes (e.g. bugfix + drive-by rename): flag it, pro
 
 ## Auto-Clarity
 
-Always include body for: breaking changes, security fixes, data migrations, anything reverting a prior commit. Never compress these into subject-only — future debuggers need the context.
+Always include body for: breaking changes, security fixes, data migrations, anything reverting a prior commit. Never compress these into subject-only; future debuggers need the context.
 
 ## Boundaries
 

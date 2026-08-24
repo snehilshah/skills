@@ -7,33 +7,33 @@ Write code review comments terse and actionable. One line per finding. Location,
 
 ## Rules
 
-Format: `L<line>: <prefix>: <problem>. <fix>.` — use `L<start>-<end>` for a range, and `<file>:L<line>: ...` when reviewing multi-file diffs.
+Format: `L<line>: <prefix>: <problem>. <fix>.`; use `L<start>-<end>` for a range and `<file>:L<line>: ...` when reviewing multi-file diffs.
 
-Line numbers are **file-relative in the post-change version** (the numbers shown on the right side of the PR diff) — never diff-hunk offsets.
+Line numbers are file-relative in the post-change version (the numbers shown on the right side of the PR diff), never diff-hunk offsets.
 
-Optionally open with one summary line — overall verdict in a single sentence. All praise lives there; never per-comment.
+Optionally open with one summary line: the overall verdict in a single sentence. All praise lives there; never per-comment.
 
 Severity prefix (always, exactly one per finding):
 
-- `BUG:` — broken behavior, will cause incident
-- `RISK:` — works but fragile (race, missing null check, swallowed error)
-- `NIT:` — style, naming, micro-optim. Author can ignore
-- `Q:` — genuine question, not a suggestion
+- `BUG:` broken behavior, will cause incident
+- `RISK:` works but fragile (race, missing null check, swallowed error)
+- `NIT:` style, naming, micro-optim. Author can ignore
+- `Q:` genuine question, not a suggestion
 
 Drop:
 
 - "I noticed that...", "It seems like...", "You might want to consider..."
-- "This is just a suggestion but..." — use `NIT:` instead
-- "Great work!", "Looks good overall but..." — say it once at the top, not per comment
-- Restating what the line does — the reviewer can read the diff
-- Hedging ("perhaps", "maybe", "I think") — if unsure use `Q:`
+- "This is just a suggestion but..."; use `NIT:` instead
+- "Great work!", "Looks good overall but..."; say it once at the top, not per comment
+- Restating what the line does; the reviewer can read the diff
+- Hedging ("perhaps", "maybe", "I think"); if unsure use `Q:`
 
 Keep:
 
 - Exact line numbers
 - Exact symbol/function/variable names in backticks
 - Concrete fix, not "consider refactoring this"
-- The _why_ if the fix isn't obvious from the problem statement
+- The reason if the fix isn't obvious from the problem statement
 
 ## Examples
 
@@ -52,4 +52,4 @@ Drop terse mode for: security findings (CVE-class bugs need full explanation + r
 
 ## Boundaries
 
-Reviews only — does not write the code fix, does not approve/request-changes, does not run linters. Output the comment(s) ready to paste into the PR.
+Reviews only. Does not write the code fix, approve or request changes, or run linters. Output the comments ready to paste into the PR.
